@@ -36,8 +36,8 @@ proc sql;
 			month(date)								as Month					label="Month"									format 4.,
 			case 	when 				 date <  "01APR2020"d 	then	4 	
 					when "01APR2020"d <= date <  "01JAN2022"d 	then	1
-					when "01JAN2022"d <= date <  "01JAN2023"d	then 	2
-					when 				 date >= "01JAN2023"d	then 	3
+					when "01JAN2022"d <= date <  "01FEB2023"d	then 	2
+					when 				 date >= "01FEB2023"d	then 	3
 																else	.
 			end		as COVID_Period		label="COVID Period"
 	from 	solar_15
